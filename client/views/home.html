@@ -1,0 +1,82 @@
+<!-- begin #content -->
+<div id="content" class="content">
+<!-- begin breadcrumb -->
+<ol class="breadcrumb pull-right">
+  <li><a href="javascript:;">Home</a></li>
+  <li><a href="javascript:;">Dashboard</a></li>
+  <li class="active">Dashboard v2</li>
+</ol>
+<!-- end breadcrumb -->
+<!-- begin page-header -->
+<h1 class="page-header" style="color: black">Dashboard<small></h1>
+<!-- end page-header -->
+<!-- begin row -->
+<div class="row">
+    <!-- begin col-3 -->
+    <div class="col-md-6 col-sm-6">
+        <div class="widget widget-stats bg-green">
+            <div class="stats-icon stats-icon-lg"><i class="fa fa-globe fa-fw"></i></div>
+            <div class="stats-title">TODAY'S VISITS</div>
+            <div class="stats-number" ng-bind="todaysVisits"></div>
+            <div class="stats-progress progress">
+                      <div class="progress-bar" style="width: {{todaysVisits}}%;"></div>
+                  </div>
+                  <div class="stats-desc">Better than last week ({{todaysVisits}}%)</div>
+        </div>
+    </div>
+    <!-- end col-3 -->
+    <!-- begin col-3 -->
+    <div class="col-md-6 col-sm-6">
+        <div class="widget widget-stats bg-blue">
+            <div class="stats-icon stats-icon-lg"><i class="fa fa-tags fa-fw"></i></div>
+            <div class="stats-title">TOTAL USERS</div>
+            <div class="stats-number" ng-bind="countUsers"></div>
+            <div class="stats-progress progress">
+                      <div class="progress-bar" style="width: {{countUsers}}%;"></div>
+                  </div>
+                  <div class="stats-desc">Better than last week ({{countUsers}}%)</div>
+        </div>
+    </div>
+    <!-- end col-3 -->
+</div>
+<!-- end row -->
+
+<!-- begin row -->
+<div class="row">
+    <div class="col-md-8">
+        <div class="widget-chart bg-black">
+            <div style="padding: 15px">
+                <h4 class="chart-title">
+                    Users Analytics
+                    <small>Where do our Users come from</small>
+                </h4>
+                <canvas style="height: 260px;" id="line" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-series="series" chart-options="options"
+                chart-dataset-override="datasetOverride" chart-click="onClick" chart-colors='["#31C0BE"]'>
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <!-- begin panel -->
+        <div class="panel panel-inverse" data-sortable-id="index-4">
+            <div class="panel-heading">
+                <h4 class="panel-title">New Registered Users <span class="hidden pull-right label label-success">24 new users</span></h4>
+            </div>
+                  <ul style="margin:0;padding: 18px 10px 19px 10px" class="registered-users-list clearfix bg-black">
+                      <li ng-repeat="newestUser in newestUsers">
+                          <a href=""><img ng-src="{{newestUser.picture}}" alt="" /></a>
+                          <h4 class="username text-ellipsis fontWhite">
+                              {{newestUser.name}}
+                              <small></small>
+                          </h4>
+                      </li>
+                  </ul>
+            <div class="panel-footer text-center bg-black-darker">
+                <a href="" class="text-inverse"><span class="fontWhite">View All</span></a>
+            </div>
+        </div>
+        <!-- end panel -->
+    </div>
+</div>
+<!-- end row -->

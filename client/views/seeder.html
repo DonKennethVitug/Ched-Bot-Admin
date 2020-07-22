@@ -1,0 +1,8 @@
+<div id="content" class="content">
+  <h3 class="page-title fadeInUp animated animation-delay1 fontOrange"><a a-href="" style="width:100%" class="btn btn-danger" ng-click="sc.model.seeder()">Seeder</a></h3>
+  <span ng-repeat="log in sc.model.logs | reverse" >
+  <hr style="border-color: black">
+  <h4 ng-bind="log.text"></h4>
+  <hr style="border-color: black">
+  </span>
+</div>

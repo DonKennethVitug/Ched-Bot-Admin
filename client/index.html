@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" class-route lang="" ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Admin Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/socialButtons.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/angular-material.min.css" />
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/jquery.gritter.css" />
+    <link rel="stylesheet" href="assets/css/angular-chart.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/morris.css" />
+    <link rel="stylesheet" href="assets/css/style-responsive.min.css" />
+    <link rel="stylesheet" href="assets/css/angular-wizard.min.css" />
+    <link rel="stylesheet" href="assets/css/v-tabs.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-slider.min.css" />
+    <link rel="stylesheet" href="assets/css/admin.css" />
+  </head>
+  <body>
+
+  <div id="loader" class="fadeInDown animated animation-delay1 veil" style="background: url('assets/img/loader1.gif') no-repeat fixed center; background-size: cover; z-index: 1"></div>
+  
+  <!-- begin #page-container -->
+  <div class="hidden" id="page-container">
+
+    <div id="page-container" class="page-sidebar-fixed page-header-fixed">
+      <!-- begin #header -->
+      <div id="headside" class="">
+      <div id="header" class="header navbar navbar-default navbar-fixed-top">
+        <!-- begin container-fluid -->
+        <div class="container-fluid" style="background-color: rgba(26,34,41,0.9)">
+          <!-- begin mobile sidebar expand / collapse button -->
+          <div class="navbar-header">
+            <a ui-sref="navigate_auth" class="navbar-brand" style="color: white; font-size: 30px"><span style="color:orange">Admin</span> Page</a>
+            <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- end mobile sidebar expand / collapse button -->
+          
+        </div>
+        <!-- end container-fluid -->
+      </div>
+      <!-- end #header -->
+
+        <!-- begin #sidebar -->
+      <div id="sidebar" class="sidebar">
+        <!-- begin sidebar scrollbar -->
+        <div data-scrollbar="true" data-height="100%">
+
+          <!-- begin sidebar user -->
+          <div id="userNav" class="">
+            <ul class="nav">
+              <li class="nav-profile">
+                <div class="image">
+                  <a ui-sref="home"><img src='//27.251.216.195:8090/images/admin.png' alt="" /></a>
+                </div>
+                <div class="info">
+                  Admin
+                  <small>- I am Admin</small>
+                </div>
+              </li>
+            </ul>
+            <!-- end sidebar user -->
+          </div>
+          <ul class="nav">
+            <li class="nav-header">Navigation</li>
+            <li id="business" class="active has-sub" ng-click="a=1;b=0" ng-class="{'active':a}">
+              <a>
+                  <b class="caret pull-right"></b>
+                  <i class="fa fa-laptop"></i>
+                  <span>Application</span>
+              </a>
+              <ul class="sub-menu">
+                   <!-- <li class="">
+                      <a ui-sref="home">
+                          <i class="fa fa-laptop"></i>
+                          <span>Dashboard</span>
+                      </a>
+                    </li>
+                  <li class="">
+                      <a ui-sref="schools">
+                          <i class="fa fa-laptop"></i>
+                          <span>Schools</span>
+                      </a>
+                    </li>
+                  <li class="">
+                      <a ui-sref="courses">
+                          <i class="fa fa-laptop"></i>
+                          <span>Courses</span>
+                      </a>
+                  </li> -->
+                  <!-- <li class="">
+                      <a ui-sref="courses_offered">
+                          <i class="fa fa-laptop"></i>
+                          <span>Courses Offered</span>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a ui-sref="seeder">
+                          <i class="fa fa-laptop"></i>
+                          <span>Seeder</span>
+                      </a>
+                  </li> -->
+                  <li class="">
+                      <a ui-sref="stress-test">
+                          <i class="fa fa-laptop"></i>
+                          <span>Stress Terst</span>
+                      </a>
+                  </li>
+              </ul>
+            </li>
+            <ul class="nav">
+              <li class="nav-profile">
+                <div class="info">
+                  Admin Page
+                  <small>Made by Kenneth</small>
+                </div>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <ui-view name='content'></ui-view>
+
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-sanitize.min.js"></script>
+    <script src="assets/js/angular-ui-router.min.js"></script> 
+    <script src="assets/js/jquery.min.js"></script>  
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/angular-easyfb.min.js"></script>
+    <script src="assets/js/angular-cookies.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.cookie.min.js"></script>
+    <script src="assets/js/ngStorage.min.js"></script>
+    <script src="assets/js/apps.min.js"></script>
+    <script src="assets/js/v-tabs.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/angular-counter.min.js"></script>
+
+    <!-- app main js-->
+    <script src="app.js"></script>
+    <script src="app.service.js"></script>
+    <script src="app.controller.js"></script>
+    <script src="app.routes.js"></script>
+
+    <!-- app service js -->
+    <script src="services/admin.service.js"></script>
+
+    <!-- app directives js -->
+    <script src="directives/autosize.directives.js"></script>
+
+    <!-- app route js -->
+    <script src="routes/schools.routes.js"></script>
+    <script src="routes/schools.courses.routes.js"></script>
+    <script src="routes/courses.routes.js"></script>
+    <script src="routes/courses.offered.routes.js"></script>
+    <script src="routes/seeder.routes.js"></script>
+    <script src="routes/stress.test.routes.js"></script>
+
+    <!-- app controller js -->
+    <script src="controllers/home.controller.js"></script>
+    <script src="controllers/schools.controller.js"></script>
+    <script src="controllers/schools.courses.controller.js"></script>
+    <script src="controllers/courses.controller.js"></script>
+    <script src="controllers/courses.offered.controller.js"></script>
+    <script src="controllers/seeder.controller.js"></script>
+    <script src="controllers/stress.test.controller.js"></script>
+  </body>
+</html>

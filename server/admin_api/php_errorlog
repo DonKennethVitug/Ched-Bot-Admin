@@ -1,0 +1,1 @@
+[11-Apr-2017 09:24:27 Asia/Manila] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/bini1010/public_html/ched-bot-admin/server/admin_api/app/Models/AdminModel.php on line 93

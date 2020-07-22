@@ -1,0 +1,160 @@
+<div id="content" class="content">
+    <h3 class="page-title fadeInUp animated animation-delay1 fontOrange">Add Course</h3>
+    <select ng-model="region" ng-change="sc.fetchSchools(region)" class="form-control" id="select-required" name="selectBox">
+      <option value="">Please Select a Region</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="all">All Regions</option>
+    </select> <br>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select class="form-control" ng-model="user.role">
+                            <option value="user">School1</option>
+                            <option value="admin">School2</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" ng-model="user.username" />
+                    </td>
+                    <td>
+                        <input type="text" ng-model="user.name" />
+                    </td>
+                    <td>
+                        <input type="text" ng-model="user.description">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="user.description">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="user.description">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="user.description">
+                    </td>
+                    <td>
+                        <a a-href="" class="glyphicon glyphicon-ok"></a>
+                        <!-- <a a-href="" class="glyphicon glyphicon-remove"></a> -->
+                    </td>
+                </tr>
+                <tr ng-repeat='user in userData'>
+                    <td>
+                        <a ui-sref="admin_business_user({id: user.id, name: user.name})" data-ng-hide="editMode" ng-click="select(user.id)">{{user.username}}</a>
+                        <input type="text" data-ng-show="editMode" ng-model="user.username" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode">{{user.email}}</span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode">{{user.name}}</span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.name" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode">{{user.description}}</span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.description">
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode">{{user.role}}</span>
+                        <select class="form-control" data-ng-show="editMode" ng-model="user.role">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </td>
+                    <td>
+                        <a a-href="" class="glyphicon glyphicon-pencil" data-ng-hide="editMode" data-ng-click="editMode = true"></a>
+                        <a a-href="" class="glyphicon glyphicon-ok" data-ng-show="editMode" data-ng-click="editMode = false; update(user)"></a>
+                        <a a-href="" class="glyphicon glyphicon-remove" data-ng-show="editMode" data-ng-click="editMode = false"></a>
+                        <a a-href="" class="btn btn-danger"  data-ng-show="editMode" data-ng-click="editMode = delete(user.id)">delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3 class="page-title fadeInUp animated animation-delay1 fontOrange">Update Courses</h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <select ng-model="region" ng-change="sc.fetchSchools(region)" class="form-control" id="select-required" name="selectBox">
+              <option value="">Please Select a Region</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="all">All Regions</option>
+            </select> <br>
+            <select class="form-control" ng-model="user.role">
+                <option value="">Please Select a School</option>
+                <option value="user">School1</option>
+                <option value="admin">School2</option>
+            </select>
+            <br>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>School</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat='course in sc.model.courses'>
+                    <td>
+                        <a ui data-ng-hide="editMode" ng-bind="course.school_name"></a>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode" ng-bind="course.School"></span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode" ng-bind="course.address"></span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode" ng-bind="course.phone"></span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode" ng-bind="course.email"></span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode" ng-bind="course.website"></span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td>
+                    <td>
+                        <span data-ng-hide="editMode" ng-bind="course.image"></span>
+                        <input type="text" data-ng-show="editMode" ng-model="user.email" />
+                    </td> 
+                    <td>
+                        <a a-href="" class="glyphicon glyphicon-pencil" data-ng-hide="editMode" data-ng-click="editMode = true"></a>
+                        <a a-href="" class="glyphicon glyphicon-ok" data-ng-show="editMode" data-ng-click="editMode = false; update(user)"></a>
+                        <a a-href="" class="glyphicon glyphicon-remove" data-ng-show="editMode" data-ng-click="editMode = false"></a>
+                        <a a-href="" class="btn btn-danger"  data-ng-show="editMode" data-ng-click="editMode = delete(user.id)">delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

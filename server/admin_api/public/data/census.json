@@ -1,0 +1,244 @@
+{
+  "crime": {
+    "crime_level": {
+      "option": {
+        "very_minor": 0,
+        "somewhat_minor": 0,
+        "somewhat_serious": 0,
+        "very_serious": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_level_future": {
+      "option": {
+        "decrease": 0,
+        "stay_the_same": 0,
+        "increase": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_safe_day": {
+      "option": {
+        "very_safe": 0,
+        "fairly_safe": 0,
+        "moderate": 0,
+        "a_bit_unsafe": 0,
+        "very_unsafe": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_safe_night": {
+      "option": {
+        "very_safe": 0,
+        "fairly_safe": 0,
+        "moderate": 0,
+        "a_bit_unsafe": 0,
+        "very_unsafe": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_home": {
+      "option": {
+        "not_at_all_worried": 0,
+        "a_bit_worried": 0,
+        "moderate": 0,
+        "fairly_worried": 0,
+        "very_worried": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_robbed": {
+      "option": {
+        "not_at_all_worried": 0,
+        "a_bit_worried": 0,
+        "moderate": 0,
+        "fairly_worried": 0,
+        "very_worried": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_physically_attack": {
+      "option": {
+        "not_at_all_worried": 0,
+        "a_bit_worried": 0,
+        "moderate": 0,
+        "fairly_worried": 0,
+        "very_worried": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_violent": {
+      "option": {
+        "not_a_problem": 0,
+        "not_a_very_big_problem": 0,
+        "moderate_problem": 0,
+        "fairly_big_problem": 0,
+        "very_big_problem": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_drugs": {
+      "option": {
+        "not_a_problem": 0,
+        "not_a_very_big_problem": 0,
+        "moderate_problem": 0,
+        "fairly_big_problem": 0,
+        "very_big_problem": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "crime_theft": {
+      "option": {
+        "not_a_problem": 0,
+        "not_a_very_big_problem": 0,
+        "moderate_problem": 0,
+        "fairly_big_problem": 0,
+        "very_big_problem": 0
+      }
+    }
+  },
+  "personalities": {
+    "personality_outgoing": {
+      "option": {
+        "not_that_much": 0,
+        "less_time": 0,
+        "naturally": 0,
+        "fairly": 0,
+        "most_of_the_time": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "personality_shy": {
+      "option": {
+        "not_that_much": 0,
+        "less_time": 0,
+        "naturally": 0,
+        "fairly": 0,
+        "most_of_the_time": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "personality_can_handle_pressure": {
+      "option": {
+        "not_that_much": 0,
+        "less_time": 0,
+        "naturally": 0,
+        "fairly": 0,
+        "most_of_the_time": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "personality_conversation": {
+      "option": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "not_so_sure": 0,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "personality_curious": {
+      "option": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "not_so_sure": 0,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "personality_conservative": {
+      "option": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "not_so_sure": 0,
+        "agree": 0,
+        "strongly_agree": 0
+      }
+    }
+  },
+  "expenditure": {
+    "hygiene_products": {
+      "option": {
+        "spend_a_bit": 0,
+        "spend_fairly": 0,
+        "spend_lot": 0,
+        "spend_most": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "snacks_products": {
+      "option": {
+        "spend_a_bit": 0,
+        "spend_fairly": 0,
+        "spend_lot": 0,
+        "spend_most": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "garments_products": {
+      "option": {
+        "spend_a_bit": 0,
+        "spend_fairly": 0,
+        "spend_lot": 0,
+        "spend_most": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "gadgets_products": {
+      "option": {
+        "spend_a_bit": 0,
+        "spend_fairly": 0,
+        "spend_lot": 0,
+        "spend_most": 0
+      },
+      "rating": 0,
+      "score": 0,
+      "good_for_business": ""
+    },
+    "order_online_food": {
+      "option": {
+        "not_at_all": 0,
+        "not_that_much": 0,
+        "regularly": 0,
+        "mostly": 0,
+        "everytime": 0
+      }
+    }
+  }
+}

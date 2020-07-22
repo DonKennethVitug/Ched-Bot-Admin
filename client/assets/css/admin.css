@@ -1,0 +1,125 @@
+
+@font-face {
+  font-family: 'Ambrosia';
+  src: url('../../../assets/fonts/AMBROSIA_DEMO.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../../../assets/fonts/BebasNeue Regular.otf') format('opentype');
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.glyphicon.glyphicon-ok {
+  color: green;
+  margin: 10px;
+}
+
+.glyphicon.glyphicon-remove {
+  color: red;
+  margin: 10px;
+}
+ul, li {
+ text-decoration: none;
+ list-style-type: none;
+}
+
+.editDate-textTo {
+  margin-top: 6px;
+}
+
+.navbar-custom{
+  background-color: #2f4052;
+}
+
+.font-white {
+  color: white !important;
+}
+
+.textenginetxt{
+  color: #fff;
+  font-style: italic;
+  font-size: 30px;
+  text-shadow: none;
+  font-family: 'Ambrosia';
+}
+
+.portaltxt{
+  color: #c27139;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: none;
+  font-family: 'Ambrosia';
+}
+
+ul.nav > li > a{
+  color: #fff;
+  transition: all 0.2s ease
+}
+/*
+ul.nav > li > a:hover{
+  background: #f39c11 !important;
+  color: #fff;
+}
+
+ul.nav > li > a:focus,
+ul.nav > li > a:active {
+  background: #f39c11 !important;
+  color: #fff;
+}
+*/
+.icon-bar{
+  background-color: #c27139;
+}
+
+.page-title{
+  font-family: 'Bebas';
+  font-size: 35px;
+  color: #c27139;
+}
+
+.new-ad-btn,
+.new-user-btn {
+  margin-top: 20px;
+  float: right;
+  background-color: #c27139;
+  color: #fff;
+  border-radius: 0;
+}
+
+.forgot-btn{
+  text-align: center;
+  color: #000;
+}
+/**animations**/
+
+.animation-form{
+    animation-duration: 0.8s;
+}
+.animation-delay1{
+    animation-delay: 0.05s;
+}
+.animation-delay2{
+    animation-delay: 0.1s;
+}
+.animation-delay3{
+    animation-delay: 0.5s;
+}
+.animation-delay4{
+    animation-delay: 0.5s;
+}
+.grow-hover:hover{
+    font-size: 15px;
+}
+.grow-hover{
+    transition-property: all;
+    transition-duration: .3s;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   /*background-color: #afacac;*/
+}
+.ads-tbl{
+  margin-bottom: 100px;
+}

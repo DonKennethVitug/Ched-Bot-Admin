@@ -1,0 +1,15 @@
+<div id="content" class="content">
+
+  <h3 class="page-title fadeInUp animated animation-delay1 fontOrange"><a href="" style="width:100%" class="btn" ng-class="{'btn-danger' : a, 'btn-success' : !a}" ng-click="stc.model.test(); a=!a; stc.model.setFinished()">{{!a ? "Stress Test" : "Stop"}}</a></h3>
+  
+  <span ng-repeat="log in stc.model.logs | reverse" >
+
+  <hr style="border-color: black">
+
+  <h4 ng-bind="log.text"></h4>
+
+  <hr style="border-color: black">
+
+  </span>
+
+</div>

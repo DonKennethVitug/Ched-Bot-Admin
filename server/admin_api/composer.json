@@ -1,0 +1,22 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.1",
+        "tuupola/slim-jwt-auth": "^2.3",
+        "zendframework/zend-config": "~2.3",
+        "zendframework/zend-http": "~2.3",
+        "cloudinary/cloudinary_php": "dev-master",
+        "illuminate/database": "^5.4",
+        "illuminate/events": "^5.4"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Models\\": "app/Models/",
+    		"Controllers\\": "app/Controllers/",
+            "Interfaces\\": "app/Interfaces/",
+            "Helpers\\": "app/Helpers/",
+            "Exceptions\\": "app/Exceptions/",
+            "Middleware\\": "app/Middleware/"
+    	}
+    }
+}
